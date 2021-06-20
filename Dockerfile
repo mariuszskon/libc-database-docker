@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     rpm2cpio \
     cpio \
     zstd \
+    jq \
     xz-utils \
     && rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/niklasb/libc-database /libc-database && \
